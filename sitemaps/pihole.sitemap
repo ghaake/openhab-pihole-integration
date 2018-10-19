@@ -1,0 +1,14 @@
+sitemap pihole label="PiHole" {
+	Frame item=gPiHole label="Pi-Hole" {
+        Text item=PiHole_DomainsBeingBlocked
+        Text item=PiHole_DnsQueriesToday
+        Text item=PiHole_AdsBlockedToday
+        Text item=PiHole_AdsPercentageToday
+        Text item=PiHole_UniqueDomains
+        Text item=PiHole_QueriesForwarded
+        Text item=PiHole_QueriesCached
+        Text item=PiHole_ClientsEverSeen
+        Text item=PiHole_UniqueClients
+        Text item=PiHole_Status
+	}
+}

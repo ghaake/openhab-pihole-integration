@@ -1,0 +1,11 @@
+Group    gPiHole                      "Pi-Hole"                         <pihole>    
+Number   PiHole_DomainsBeingBlocked   "Domains being blocked [%d]"      <pihole>    (gPiHole)   {http="<[pihole:100000:JSONPATH($.domains_being_blocked)]"}
+Number   PiHole_DnsQueriesToday       "DNS queries today [%d]"          <chart>     (gPiHole)   {http="<[pihole:100000:JSONPATH($.dns_queries_today)]"}
+Number   PiHole_AdsBlockedToday       "Ads blocked today [%d]"          <keyring>   (gPiHole)   {http="<[pihole:100000:JSONPATH($.ads_blocked_today)]"}
+Number   PiHole_AdsPercentageToday    "Ads percentage today [%.2f %%]"  <keyring>   (gPiHole)   {http="<[pihole:100000:JSONPATH($.ads_percentage_today)]"}
+Number   PiHole_UniqueDomains         "Unique domains [%d]"             <network>   (gPiHole)   {http="<[pihole:100000:JSONPATH($.unique_domains)]"}
+Number   PiHole_QueriesForwarded      "Queries forwarded [%d]"          <chart>     (gPiHole)   {http="<[pihole:100000:JSONPATH($.queries_forwarded)]"}
+Number   PiHole_QueriesCached         "Queries cached [%d]"             <wind>      (gPiHole)   {http="<[pihole:100000:JSONPATH($.queries_cached)]"}
+Number   PiHole_ClientsEverSeen       "Clients ever seen [%d]"          <screen>    (gPiHole)   {http="<[pihole:100000:JSONPATH($.clients_ever_seen)]"}
+Number   PiHole_UniqueClients         "Unique clients [%d]"             <screen>    (gPiHole)   {http="<[pihole:100000:JSONPATH($.unique_clients)]"}
+String   PiHole_Status                "Status [%s]"                     <status>    (gPiHole)   {http="<[pihole:100000:JSONPATH($.status)]"}
